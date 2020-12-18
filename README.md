@@ -3,9 +3,7 @@
 
 >### Strategy
 >    O padrão Strategy é muito útil quando temos um conjunto de algoritmos similares, 
-    e precisamos alternar entre eles em diferentes pedaços da aplicação. 
-    Temos diferentes maneiras de calcular o imposto, 
-    e precisamos alternar entre elas.
+    e precisamos alternar entre eles em diferentes pedaços da aplicação.
 >
 >   O Strategy nos oferece uma maneira flexível para escrever diversos algoritmos 
     diferentes, e de passar esses algoritmos para classes clientes que precisam deles.
