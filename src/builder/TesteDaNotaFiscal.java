@@ -18,12 +18,12 @@ public class TesteDaNotaFiscal {
                             .comValor(400).build();
 
         NotaFiscalBuilder notaBuilder = new NotaFiscalBuilder();
-        notaBuilder.paraEmpresa("UOL")
+        notaBuilder.paraEmpresa("Nome da Empresa")
             .cnpj("12.123.456/0001-00")
-            .com(item1)
-            .com(item2)
-            .com(item3)
-            .com("Observações");
+            .observacao(item1)
+            .observacao(item2)
+            .observacao(item3)
+            .observacao("Observações");
 
         NotaFiscal nf = notaBuilder.build();
 

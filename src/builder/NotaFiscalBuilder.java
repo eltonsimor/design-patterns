@@ -1,5 +1,7 @@
 package builder;
 
+import observer.AcaoAposGerarNota;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.List;
@@ -13,10 +15,12 @@ public class NotaFiscalBuilder {
     private double impostos;
     private String observacoes;
     private Calendar data;
+    private List<AcaoAposGerarNota> acoes;
 
     public NotaFiscalBuilder() {
         this.todosItens = new ArrayList<>();
         this.data = Calendar.getInstance();
+        this.acoes = new ArrayList<>();
     }
 
     public NotaFiscalBuilder paraEmpresa(String razaoSocial) {
@@ -29,14 +33,14 @@ public class NotaFiscalBuilder {
         return this;
     }
 
-    public NotaFiscalBuilder com(ItemDaNota item){
+    public NotaFiscalBuilder observacao(ItemDaNota item){
         this.todosItens.add(item);
         this.valorBruto += item.getValor();
         this.impostos += this.valorBruto * 0.05;
         return this;
     }
 
-    public NotaFiscalBuilder com(String observacoes) {
+    public NotaFiscalBuilder observacao(String observacoes) {
         this.observacoes = observacoes;
         return this;
     }
@@ -46,7 +50,17 @@ public class NotaFiscalBuilder {
         return this;
     }
 
-    public NotaFiscal build(){
-        return new NotaFiscal(this.razaoSocial, this.cnpj, this.data, this.valorBruto, this.impostos, this.todosItens, this.observacoes);
+    public NotaFiscalBuilder acao(AcaoAposGerarNota acao){
+        this.acoes.add(acao);
+        return this;
     }
+
+    public NotaFiscal build(){
+        NotaFiscal nf = new NotaFiscal(this.razaoSocial, this.cnpj, this.data, this.valorBruto, this.impostos, this.todosItens, this.observacoes);
+
+        acoes.forEach(acao -> acao.execute(nf));
+
+        return nf;
+    }
+
 }
