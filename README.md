@@ -52,10 +52,31 @@
 >### Factory
 > Usamos uma fábrica quando temos que isolar o processo de criação de um objeto em um único lugar. Essa fábrica pode descobrir como criar o objeto dentro dela própria, mas geralmente ela não precisa de muitas informações para criar o objeto.
 > 
-> Qual seria a diferença entre Factory e Builder?
+> #####Qual seria a diferença entre Factory e Builder?
 > 
 > Ambos são padrões de projeto que visam resolver problemas de criação de objetos. O que muda de um pro outro é basicamente a semântica.
 >
 >Geralmente usamos um builder quando precisamos passar diversas informações para a lógica que monta o objeto. No caso da Nota Fiscal, passamos nome, itens, etc.
 > ### Flyweight
 > 
+> É um padrão de projeto de software apropriado quando vários objetos devem ser manipulados em memória sendo que muitos deles possuem informações repetidas. Dado que o recurso de memória é limitado, é possível segregar a informação repetida em um objeto adicional que atenda as características de imutabilidade e comparabilidade (que consiga ser comparado com outro objeto para determinar se ambos carregam a mesma informação).
+> 
+> #####Qual a diferença de um Factory e Flyweight?
+> 
+> Uma Factory instancia uma classe que é importante/complexa, e seu processo de criação deve ser isolado.
+>
+>Um Flyweight serve para quando temos muitas instâncias do mesmo objeto andando pelo sistema, e precisamos economizar. Para tal, o Flyweight faz uso de uma fábrica modificada, que guarda essas instâncias.
+> 
+> #####Qual a diferença de um Singleton e Flyweight?
+> 
+> A ideia de ambos é garantir que existam apenas uma única referência para o objeto ao longo do programa.
+> 
+>A diferença é que o Flyweight garante que existam apenas uma única instância de vários elementos. É um "singleton maior".
+> 
+> ### Memento
+> 
+>É um padrão de projeto de software documentado no Catálogo Gang of Four, sendo considerado como um padrão comportamental. Ele permite armazenar o estado interno de um objeto em um determinando momento, para que seja possível retorná-lo a este estado, sem que isso cause problemas com o encapsulamento.
+>
+>Ele funciona de maneira que uma classe é responsável por salvar o estado do objeto desejado enquanto que uma outra classe fica responsável por armazenar todas essas copias (mementos).
+>
+>O padrão Memento é implementado se utilizando de três elementos: Originador, Armazenador e o Memento.
