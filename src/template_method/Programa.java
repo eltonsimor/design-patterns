@@ -3,7 +3,7 @@ package template_method;
 import chains_of_responsibility.Item;
 import strategy.Orcamento;
 
-public class TestaTemplateMethod {
+public class Programa {
 
     public static void main(String[] args) {
         TemplateDeImpostoCondicional icpp = new ICPP();

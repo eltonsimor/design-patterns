@@ -2,7 +2,7 @@ package states;
 
 import strategy.Orcamento;
 
-public class TesteDeDescontoExtra {
+public class Programa {
 
     public static void main(String[] args) {
         Orcamento reforma = new Orcamento(500.00);

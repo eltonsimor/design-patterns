@@ -1,6 +1,6 @@
 package builder;
 
-public class TesteDaNotaFiscal {
+public class Programa {
 
     public static void main(String[] args) {
         ItemDaNotaBuilder itemBuilder = new ItemDaNotaBuilder();

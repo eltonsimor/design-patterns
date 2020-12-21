@@ -7,7 +7,7 @@ import strategy.Imposto;
 import strategy.Orcamento;
 import template_method.ICPP;
 
-public class TesteDeImpostosComplexos {
+public class Programa {
 
     public static void main(String[] args) {
         Imposto iss = new ISS(new ICMS(new ICPP()));

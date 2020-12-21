@@ -5,7 +5,7 @@ import builder.ItemDaNotaBuilder;
 import builder.NotaFiscal;
 import builder.NotaFiscalBuilder;
 
-public class TesteAcoes {
+public class Programa {
 
     public static void main(String[] args) {
         ItemDaNotaBuilder itemBuilder = new ItemDaNotaBuilder();
