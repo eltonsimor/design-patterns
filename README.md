@@ -80,3 +80,11 @@
 >Ele funciona de maneira que uma classe é responsável por salvar o estado do objeto desejado enquanto que uma outra classe fica responsável por armazenar todas essas copias (mementos).
 >
 >O padrão Memento é implementado se utilizando de três elementos: Originador, Armazenador e o Memento.
+> 
+>#### Podemos ter algum problema no padrão memento?
+> 
+>Um possível problema é a quantidade de memória que ele pode ocupar, afinal estamos guardando muitas instâncias de objetos que podem ser pesados.
+>
+>Por isso, dependendo do tamanho dos seus objetos, a classe Estado pode passar a guardar não o objeto todo, mas sim somente as propriedades que mais fazem sentido.
+>
+>Nada impede você também de limitar a quantidade máxima de objetos no histórico que será armazenado.
