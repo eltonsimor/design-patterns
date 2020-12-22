@@ -11,8 +11,7 @@ public class Programa {
 
         System.out.println(resultado);
 
-        Expressao raiz = new RaizQuadrada(new Numero(9));
         Visitor impressora = new ImpressoraVisitor();
-        raiz.aceita(impressora);
+        soma.aceita(impressora);
     }
 }
