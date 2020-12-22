@@ -20,7 +20,7 @@
     responsabilidades em classes pequenas e enxutas, e ainda provê uma maneira flexível 
     e desacoplada de juntar esses comportamentos novamente.
 >### Template Method
->    Quando temos diferentes algoritmos que possuem estruturas parecidas, o Template Method é uma 
+>   Quando temos diferentes algoritmos que possuem estruturas parecidas, o Template Method é uma 
     boa solução. Com ele, conseguimos definir, em um nível mais macro, a estrutura do algoritmo e 
     deixar "buracos", que serão implementados de maneira diferente por cada uma das 
     implementações específicas.
@@ -29,13 +29,13 @@
     tanto do algoritmo em sua estrutura macro, quanto dos detalhes do algoritmo, já que cada 
     classe tem sua responsabilidade bem separada.
 >### Decorator
->    Sempre que percebemos que temos comportamentos que podem ser compostos por comportamentos 
+>   Sempre que percebemos que temos comportamentos que podem ser compostos por comportamentos 
     de outras classes envolvidas em uma mesma hierarquia, como foi o caso dos impostos, 
     que podem ser compostos por outros impostos. O Decorator introduz a flexibilidade na 
     composição desses comportamentos, bastando escolher no momento da instanciação, quais 
     instancias serão utilizadas para realizar o trabalho.
 >### States
->    A principal situação que faz emergir o Design Pattern State é a necessidade 
+>   A principal situação que faz emergir o Design Pattern State é a necessidade 
     de implementação de uma máquina de estados. Geralmente, o controle das possíveis 
     transições são vários e complexos, fazendo com que a implementação não seja 
     simples. O State auxilia a manter o controle dos estados simples e organizados 
@@ -52,7 +52,7 @@
 >### Factory
 > Usamos uma fábrica quando temos que isolar o processo de criação de um objeto em um único lugar. Essa fábrica pode descobrir como criar o objeto dentro dela própria, mas geralmente ela não precisa de muitas informações para criar o objeto.
 > 
->#### Qual seria a diferença entre Factory e Builder?
+>**Qual seria a diferença entre Factory e Builder?**
 > 
 > Ambos são padrões de projeto que visam resolver problemas de criação de objetos. O que muda de um pro outro é basicamente a semântica.
 >
@@ -61,13 +61,13 @@
 > 
 > É um padrão de projeto de software apropriado quando vários objetos devem ser manipulados em memória sendo que muitos deles possuem informações repetidas. Dado que o recurso de memória é limitado, é possível segregar a informação repetida em um objeto adicional que atenda as características de imutabilidade e comparabilidade (que consiga ser comparado com outro objeto para determinar se ambos carregam a mesma informação).
 > 
->#### Qual a diferença de um Factory e Flyweight?
+>**Qual a diferença de um Factory e Flyweight?**
 > 
-> Uma Factory instancia uma classe que é importante/complexa, e seu processo de criação deve ser isolado.
+>Uma Factory instancia uma classe que é importante/complexa, e seu processo de criação deve ser isolado.
 >
 >Um Flyweight serve para quando temos muitas instâncias do mesmo objeto andando pelo sistema, e precisamos economizar. Para tal, o Flyweight faz uso de uma fábrica modificada, que guarda essas instâncias.
 > 
->#### Qual a diferença de um Singleton e Flyweight?
+>**Qual a diferença de um Singleton e Flyweight?**
 > 
 > A ideia de ambos é garantir que existam apenas uma única referência para o objeto ao longo do programa.
 > 
@@ -81,7 +81,7 @@
 >
 >O padrão Memento é implementado se utilizando de três elementos: Originador, Armazenador e o Memento.
 > 
->#### Podemos ter algum problema no padrão memento?
+>**Podemos ter algum problema no padrão memento?**
 > 
 >Um possível problema é a quantidade de memória que ele pode ocupar, afinal estamos guardando muitas instâncias de objetos que podem ser pesados.
 >
@@ -91,8 +91,8 @@
 > 
 >### Interpreter
 > 
-> É um dos padrões de projeto de software, muito utilizado para a resolução de problemas quando a modelagem de sistemas ou softwares. Esse padrão esta incluso na categoria de Padrão Comportamental, ou seja, ele busca solucionar problemas de modelagem que tratam o comportamento de classes.
-> O padrão Interpreter sugere modelar o domínio com uma gramática recursiva. Cada regra na gramática é tanto um 'composite' (uma regra que referencia outras regras) ou um 'terminal' (uma folha/nó numa estrutura de árvore). O Interpreter baseia-se na travessia recursiva do padrão Composite para interpretar as 'sentenças' que ele deve processar:
-> ![Moldelo](/imgs/Interpreter_design_pattern.png)
+> É um dos padrões de projeto de software, muito utilizado para a resolução de problemas quando a modelagem de sistemas ou softwares. Esse padrão esta incluso na categoria de Padrão Comportamental, ou seja, ele busca solucionar problemas de modelagem que tratam o comportamento/expressão de classes.
 > 
+> O padrão Interpreter sugere modelar o domínio com uma gramática recursiva. Cada regra na gramática é tanto um 'composite' (uma regra que referencia outras regras) ou um 'terminal' (uma folha/nó numa estrutura de árvore). O Interpreter baseia-se na travessia recursiva do padrão Composite para interpretar as 'sentenças' que ele deve processar.
 > 
+> **Exemplo:** O padrão Interpreter define uma representação gramatical de uma linguagem e um intérprete para realizar a interpretação da gramática. Os músicos são exemplos de Interpreters. O tom de um som e sua duração podem ser representados em notação musical em uma pauta. Esta notação fornece a linguagem da música. Músicos tocando a música da partitura são capazes de reproduzir o tom original e duração de cada som representado.
