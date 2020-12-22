@@ -103,6 +103,8 @@
 > 
 > Um dos frameworks que mais utilizamos que faz uso desse pattern é o **Hibernetes**, que visita toda a árvore de dados para montar a query.
 > 
+> A ideia é usar uma classe de elementos como uma estrutura, sendo que cada uma delas possui um método cujo um dos argumentos é um objeto do tipo visitor. Visitor é uma interface que possui um método visit() para cada classe de elementos. O método accept() de uma classe de elementos invoca o método visit() de sua respectiva classe. Classes visitor concretas distintas podem então ser escritas para implementar operações especiais.
+> 
 >### Bridge
 > 
 >### Adapter
