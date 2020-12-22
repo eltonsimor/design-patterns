@@ -1,4 +1,4 @@
-package interpreter;
+package interpreter_and_visitor;
 
 public class Numero implements Expressao {
 
@@ -10,6 +10,15 @@ public class Numero implements Expressao {
 
     @Override
     public int avalia() {
+        return numero;
+    }
+
+    @Override
+    public void aceita(Visitor visitor) {
+        visitor.visitaNumero(this);
+    }
+
+    public int getNumero() {
         return numero;
     }
 }

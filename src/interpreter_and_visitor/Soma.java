@@ -1,6 +1,14 @@
-package interpreter;
+package interpreter_and_visitor;
 
 public class Soma implements Expressao {
+    public Expressao getEsquerda() {
+        return esquerda;
+    }
+
+    public Expressao getDireita() {
+        return direita;
+    }
+
     private Expressao esquerda;
     private Expressao direita;
 
@@ -14,5 +22,10 @@ public class Soma implements Expressao {
         int esquerda = this.esquerda.avalia();
         int direita = this.direita.avalia();
         return esquerda + direita;
+    }
+
+    @Override
+    public void aceita(Visitor visitor) {
+        visitor.visitaSoma(this);
     }
 }

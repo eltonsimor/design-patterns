@@ -1,4 +1,4 @@
-package interpreter;
+package interpreter_and_visitor;
 
 public class Programa {
 
@@ -10,5 +10,9 @@ public class Programa {
         int resultado = soma.avalia();
 
         System.out.println(resultado);
+
+        Expressao raiz = new RaizQuadrada(new Numero(9));
+        Visitor impressora = new ImpressoraVisitor();
+        raiz.aceita(impressora);
     }
 }

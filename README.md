@@ -96,3 +96,7 @@
 > O padrão Interpreter sugere modelar o domínio com uma gramática recursiva. Cada regra na gramática é tanto um 'composite' (uma regra que referencia outras regras) ou um 'terminal' (uma folha/nó numa estrutura de árvore). O Interpreter baseia-se na travessia recursiva do padrão Composite para interpretar as 'sentenças' que ele deve processar.
 > 
 > **Exemplo:** O padrão Interpreter define uma representação gramatical de uma linguagem e um intérprete para realizar a interpretação da gramática. Os músicos são exemplos de Interpreters. O tom de um som e sua duração podem ser representados em notação musical em uma pauta. Esta notação fornece a linguagem da música. Músicos tocando a música da partitura são capazes de reproduzir o tom original e duração de cada som representado.
+> 
+>### Visitor
+> 
+> 

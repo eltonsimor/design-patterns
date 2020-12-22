@@ -1,4 +1,4 @@
-package interpreter;
+package interpreter_and_visitor;
 
 public class Divisao implements Expressao {
 
@@ -17,5 +17,18 @@ public class Divisao implements Expressao {
         if(direita == 0) throw new RuntimeException("Nenhum número é divisor de zero.");
 
         return esquerda / direita;
+    }
+
+    @Override
+    public void aceita(Visitor visitor) {
+        visitor.visitaDivisao(this);
+    }
+
+    public Expressao getEsquerda() {
+        return esquerda;
+    }
+
+    public Expressao getDireita() {
+        return direita;
     }
 }
