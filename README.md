@@ -88,3 +88,11 @@
 >Por isso, dependendo do tamanho dos seus objetos, a classe Estado pode passar a guardar não o objeto todo, mas sim somente as propriedades que mais fazem sentido.
 >
 >Nada impede você também de limitar a quantidade máxima de objetos no histórico que será armazenado.
+> 
+>### Interpreter
+> 
+> É um dos padrões de projeto de software, muito utilizado para a resolução de problemas quando a modelagem de sistemas ou softwares. Esse padrão esta incluso na categoria de Padrão Comportamental, ou seja, ele busca solucionar problemas de modelagem que tratam o comportamento de classes.
+> O padrão Interpreter sugere modelar o domínio com uma gramática recursiva. Cada regra na gramática é tanto um 'composite' (uma regra que referencia outras regras) ou um 'terminal' (uma folha/nó numa estrutura de árvore). O Interpreter baseia-se na travessia recursiva do padrão Composite para interpretar as 'sentenças' que ele deve processar:
+> ![Moldelo](/imgs/Interpreter_design_pattern.png)
+> 
+> 
