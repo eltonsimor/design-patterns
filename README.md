@@ -1,4 +1,15 @@
 ># Design Patterns
+> 
+> São elementos reutilizáveis de um Software Orientado a Objetos. Foi criado por 4 pessoas 
+> (Erich Gamma, Richard Helm, Ralph Johnson e John Vissides) com um prefácio de Grady Booch (conhecido como
+> criador do UML). Esses autores são frequentemente chamados de **Gang of Four (GoF)**.
+> 
+> Esses padrões de projetos tem influenciado muito o campo de Engenharia de Software e é considerada um dos recursos
+> importantes para teoria e prática do uso de orientação a objetos.
+> 
+> A idéia desse projeto é criar exemplos de padrões e não uma implementação de um sistema. Por isso, temos umas partes
+> do código não implementados 100%, mais terá o fundamento e orientação de organização de acordo com o padrão de projeto.
+> 
 >### Strategy
 >    O padrão Strategy é muito útil quando temos um conjunto de algoritmos similares, 
     e precisamos alternar entre eles em diferentes pedaços da aplicação.
