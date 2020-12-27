@@ -132,9 +132,11 @@
 >o programador vai lá para implementar um "adaptador" para o sistema antigo, de forma a caber no modelo já existente.
 > 
 >### Adapter
+> Permite classes com interfaces incompatíveis trabalharem juntas por um envolvimento da própria 
+> interfaces de uma classe já existente.
 > 
-> Utilizamos esse padrão para adaptar interfaces antigas a interfaces novas.
-> Por exemplo, a gente cria um interface nova para implementar uma feature com legado. 
+> Ex1: Utilizamos esse padrão para adaptar interfaces antigas a interfaces novas.
+> Ex2: Podemos cria uma feature nova utilizando a mesma interface do legado. 
 > 
 >### Command
 > 
