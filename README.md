@@ -136,6 +136,7 @@
 > interfaces de uma classe já existente.
 > 
 > Ex1: Utilizamos esse padrão para adaptar interfaces antigas a interfaces novas.
+> 
 > Ex2: Podemos cria uma feature nova utilizando a mesma interface do legado. 
 > 
 >### Command
