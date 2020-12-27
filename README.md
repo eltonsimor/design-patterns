@@ -108,3 +108,9 @@
 >### Bridge
 > 
 >### Adapter
+> 
+>### Command
+> 
+>### Facade
+> 
+>### Singleton
