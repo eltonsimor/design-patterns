@@ -7,7 +7,7 @@
 > Esses padrões de projetos tem influenciado muito o campo de Engenharia de Software e é considerada um dos recursos
 > importantes para teoria e prática do uso de orientação a objetos.
 > 
-> A idéia desse projeto é criar exemplos de padrões e não uma implementação de um sistema. Por isso, temos umas partes
+> A ideia desse projeto é criar exemplos de padrões e não uma implementação de um sistema. Por isso, temos umas partes
 > do código não implementados 100%, mais terá o fundamento e orientação de organização de acordo com o padrão de projeto.
 > 
 >### Strategy
@@ -123,8 +123,13 @@
 > 
 > **Qual a diferençado Bridge e Adapter?**
 > 
-> Para esse caso, o que muda é a semântica entre eles. Porém os dois tem a mesma função. Um para implementar com o legado, 
-> e outro para implementar com um outro sistema.
+> Em termos de implementação, nenhuma. Em ambas, criamos uma interface e criamos uma implementação por baixo.
+>
+>A diferença é semântica. A ideia da Bridge é justamente ser uma ponte em dois mundos/sistemas. A ideia do Adapter é 
+>esconder alguma "sujeira", ou adaptar algo que é diferente e não bate com o sistema atual.
+>
+>É bem comum inclusive que a interface do Adapter já tenha sido pré-definida e já até exista no sistema. Nessa situação, 
+>o programador vai lá para implementar um "adaptador" para o sistema antigo, de forma a caber no modelo já existente.
 > 
 >### Adapter
 > 
