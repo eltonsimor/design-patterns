@@ -141,6 +141,24 @@
 > 
 >### Command
 > 
+> É um padrão no qual um objeto é usado para encapsular toda informação necessária para executar uma ação ou acionar um 
+> evento em um momento posterior.
+> 
+> **Qual a diferença entre Command e Strategy?**
+> 
+> Novamente, em termos de implementação, eles são bem parecidos, pois dependem de interfaces.
+>
+>A ideia do Command é abstrair um comando que deve ser executado, pois não é possível executá-lo naquele momento (pois precisamos por em uma fila ou coisa do tipo).
+>
+>Já no Strategy, a ideia é que você tenha uma estratégia (um algoritmo) para resolver um problema.
+> 
+> **É possível utilizar o Command com outros padrões?**
+> 
+> Sim! Podemos ser criativos e usar outros padrões de projeto de acordo com o problema que temos em mãos.
+>
+>Podemos usar Memento para restaurar estados de objetos que foram alterados por um Command. Podemos compor comandos, 
+>usando Composite.
+> 
 >### Facade
 > 
 >### Singleton
