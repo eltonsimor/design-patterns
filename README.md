@@ -117,13 +117,14 @@
 > A ideia é usar uma classe de elementos como uma estrutura, sendo que cada uma delas possui um método cujo um dos argumentos é um objeto do tipo visitor. Visitor é uma interface que possui um método visit() para cada classe de elementos. O método accept() de uma classe de elementos invoca o método visit() de sua respectiva classe. Classes visitor concretas distintas podem então ser escritas para implementar operações especiais.
 > 
 >### Bridge
-> É um design pattern que faz a ponte para um sistemas externo.
+> É um design pattern que faz a ponte para um outros sistemas sendo ele interno ou externo.
 > Como no exemplo, que temos no código, seria para integrar com o google usando interfaces e implementações para conversar 
 > com o google.
 > 
 > **Qual a diferençado Bridge e Adapter?**
+> 
 > Para esse caso, o que muda é a semântica entre eles. Porém os dois tem a mesma função. Um para implementar com o legado, 
-> e outro para implementar com um sistema externo.
+> e outro para implementar com um outro sistema.
 > 
 >### Adapter
 > 
