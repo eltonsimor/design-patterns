@@ -135,9 +135,9 @@
 > Permite classes com interfaces incompatíveis trabalharem juntas por um envolvimento da própria 
 > interfaces de uma classe já existente.
 > 
-> Ex1: Utilizamos esse padrão para adaptar interfaces antigas a interfaces novas.
+> **Ex1:** Utilizamos esse padrão para adaptar interfaces antigas a interfaces novas.
 > 
-> Ex2: Podemos cria uma feature nova utilizando a mesma interface do legado. 
+> **Ex2:** Podemos cria uma feature nova utilizando a mesma interface do legado. 
 > 
 >### Command
 > 
@@ -160,6 +160,39 @@
 >usando Composite.
 > 
 >### Facade
+>
+> É utilizado comumente com programação orientada a objetos. Este nome é uma analogia para uma fachada arquitetural. 
+> Um Facade é um objeto que provê uma interface simplificada para um corpo de código maior, como por exemplo, uma 
+> biblioteca de classes.
+> 
+> O Padrão Facade é do tipo estrutural . É usado quando um sistema é muito complexo ou difícil de entender, já que 
+> possui um grande número de classes independentes ou se trechos de código fonte estão indisponíveis. Este padrão 
+> esconde as complexidades de um sistema maior e provê uma interface simplificada ao cliente. Tipicamente envolve uma 
+> única classe responsável por englobar uma série de membros requeridos pelo cliente. Estes membros acessam o sistema em 
+> nome do Facade e escondem os detalhes de implementação.
+> 
+> **Qual a diferença entre Facade e Adapter?**
+> 
+> O Façade cria uma interface amigável para que clientes consigam consumir sub-sistemas (ou serviços).
+> 
+> Já o Adapter tem um propósito diferente. Ele visa adaptar um conjunto de classes que já existem, para uma outra interface, 
+> que é a requerida pelo outro sistema.
 > 
 >### Singleton
 > 
+> É um anti-padrão de projeto de software. Este padrão garante a existência de apenas uma instância de uma classe, 
+> mantendo um ponto global de acesso ao seu objeto. Isso pode ser interessante, mas tem problemas similares ao de 
+> variáveis globais no mundo procedural, afinal o objeto é único e disponível para todos. Se não usar com parcimônia, 
+> o seu código sofrerá problemas de manutenção.
+> 
+> **Onde podemos usar?**
+> 
+> **Ex1:** Alguns projetos necessitam que algumas classes tenham apenas uma instância. Por exemplo, em uma aplicação que precisa
+> de uma infraestrutura de log de dados, pode-se implementar uma classe no padrão singleton. Desta forma existe apenas
+> um objeto responsável pelo log em toda a aplicação que é acessível unicamente através da classe singleton.
+> 
+> **Ex2:** Quando você necessita de somente uma instância da classe, por exemplo, a conexão com banco de dados, vamos supor que 
+> você terá que chamar diversas vezes a conexão com o banco de dados em um código na mesma execução, se você instanciar 
+> toda vez a classe de banco, haverá grande perda de desempenho, assim usando o padrão singleton, é garantida que nesta 
+> execução será instânciada a classe somente uma vez. Lembrando que este pattern é considerado por muitos desenvolvedores 
+> um antipattern, então, cuidado onde for utilizá-lo.
